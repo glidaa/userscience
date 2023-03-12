@@ -1,0 +1,34 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .home__sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2rem 0;
+  }
+  
+  .home__section {
+    width: 30%;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .home__section h2 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+  }
+  
+  .home__section p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
