@@ -1,13 +1,10 @@
 import React from 'react';
-import Header from '../../components/Header/Header';
-import Footer from '../../components/Footer/Footer';
 
 import './Home.scss';
 
 const Home: React.FC = () => {
   return (
     <div className="home">
-      <Header />
       <div className="home__sections">
         <section className="home__section">
           <h2>Find the right respondents for your research</h2>
@@ -34,7 +31,6 @@ const Home: React.FC = () => {
           <p>Our support team is available 24/7 to help you with any issues or questions you may have.</p>
         </section>
       </div>
-      <Footer />
     </div>
   );
 };

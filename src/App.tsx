@@ -1,7 +1,9 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { ApolloProvider, ApolloClient, InMemoryCache } from '@apollo/client';
 import Home from './pages/home';
+// import Header from './components/header';
+// import Footer from './components/footer';
 // import Pricing from './pages/pricing';
 // import Register from './pages/register';
 // import Login from './pages/login';
@@ -22,10 +24,10 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-      <BrowserRouter>
-        <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
+      <HashRouter>
+        {/* <Header /> */}
+        <Routes>
+          <Route path="/" element={<Home/>} />
           {/* <Route exact path="/pricing" component={Pricing} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
@@ -35,9 +37,9 @@ function App() {
           <Route exact path="/respondent-dashboard" component={RespondentDashboard} />
           <Route exact path="/admin-dashboard" component={AdminDashboard} />
           <Route exact path="/admin-pricing" component={AdminPricing} /> */}
-        </Switch>
-        <Footer />
-      </BrowserRouter>
+        </Routes>
+        {/* <Footer /> */}
+      </HashRouter>
     </ApolloProvider>
   );
 }
