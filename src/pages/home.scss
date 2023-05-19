@@ -1,0 +1,39 @@
+//userscience/src/pages/home.scss
+
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #000;
+  color: #0002ff;
+}
+
+.home__sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.home__section {
+  width: 30%;
+  padding: 2rem;
+  border: 1px #0002ff;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #000;
+}
+
+.home__section h2 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.home__section p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
