@@ -69,7 +69,7 @@ const Sun = forwardRef((props, forwardRef) => {
 
   return (
     <mesh ref={forwardRef} position={[0, 200, -150]}>
-      <sphereGeometry args={[31, 36, 36]} />
+      <sphereGeometry args={[32, 36, 36]} />
       <meshBasicMaterial color={"#FFFF00"} />
     </mesh>
   );

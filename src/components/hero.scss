@@ -5,10 +5,20 @@
         margin-bottom: 10px;
     }
     h2 {
-        font-size: 1.5em;
+        font-size: .8em;
         margin-bottom: 20px;
+        color: white !important; /* Set the text color to white */
     }
     button {
         margin-top: 20px;
     }
+}
+.hero-container {
+  position: relative;
+
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
 }
