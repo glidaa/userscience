@@ -27,7 +27,7 @@
       return (
       <>
         <Header />
-        <div className="home" style={{ backgroundColor: theme.palette.background.default }}>
+        <div className="home" style={{ backgroundColor: 'rgba(10, 12, 20, 0.72)', color: '#fff', position: 'relative', zIndex: 1 }}>
           <Hero />
           <Background />
           <Services />
